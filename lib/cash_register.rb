@@ -6,8 +6,15 @@ class CashRegister
     @total = 0
     @discount = emp_discount
   end
-
-  private
   
-
+  def add_item(title, price)
+    
+  
+  private
+  def record_last(px)
+    @last_px = px
+  end
+  def get_last(px)
+    @last_px
+  end
 end
