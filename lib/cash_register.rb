@@ -1,14 +1,13 @@
 
 class CashRegister
-  attr_reader :total
+  attr_reader :total, :discount
   
   def initialize(emp_discount = 0)
     @total = 0
+    @discount = emp_discount
   end
 
   private
   
-  def disc_fac(disc)
-    @disc_fac = 100 - disc
-  end
+
 end
