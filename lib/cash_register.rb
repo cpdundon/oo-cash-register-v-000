@@ -13,7 +13,7 @@ class CashRegister
     t_px = px * quantity
     self.total += t_px
     record_last(t_px)
-    @items << title
+    quantity.each {|dmmy| @items << title}
   end
   
   def apply_discount()
