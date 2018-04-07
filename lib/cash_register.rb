@@ -35,7 +35,7 @@ class CashRegister
   def record_last(px)
     @last_px = px
   end
-  def get_last(px)
+  def get_last()
     @last_px
   end
 end
