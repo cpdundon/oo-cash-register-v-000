@@ -26,6 +26,10 @@ class CashRegister
     s = "After the discount, the total comes to $#{self.total.to_i}."
   end
   
+  def void_last_transaction
+    self.total -= get_last
+  end
+  
   private
   
   def record_last(px)
