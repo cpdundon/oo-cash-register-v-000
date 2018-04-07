@@ -13,6 +13,11 @@ class CashRegister
     record_last(t_px)
   end
   
+  def apply_discount()
+    factor = (100 - self.discount) / 100.0
+    self.total *= factor
+  end
+  
   private
   
   def record_last(px)
