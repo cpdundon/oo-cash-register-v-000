@@ -7,7 +7,7 @@ class CashRegister
     @discount = emp_discount
   end
   
-  def add_item(title, price)
+  def add_item(title, px)
     self.total += price
     self.record_last(px)
   end
