@@ -6,12 +6,14 @@ class CashRegister
   def initialize(emp_discount = 0)
     @total = 0
     @discount = emp_discount
+    @items = []
   end
   
   def add_item(title, px, quantity = 1)
     t_px = px * quantity
     self.total += t_px
     record_last(t_px)
+    @items << title
   end
   
   def apply_discount()
