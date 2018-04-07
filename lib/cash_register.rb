@@ -9,7 +9,7 @@ class CashRegister
   
   def add_item(title, px)
     self.total += px
-    self.record_last(px)
+    record_last(px)
   end
   
   private
